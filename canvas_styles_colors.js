@@ -160,6 +160,35 @@ function draw() {
     ctx10.fillRect(0, 0, 150, 150);
     ctx10.fillStyle = radgrad;
     ctx10.fillRect(0, 0, 150, 150);
+
+    var ctx11 = document.getElementById('canvas-pattern').getContext('2d');
+    
+    // create new image object to use as pattern
+    var img = new Image();
+    img.src = 'https://mdn.mozillademos.org/files/222/Canvas_createpattern.png';
+    img.onload = function() {
+        // create pattern
+        var ptrn = ctx11.createPattern(img, 'repeat');
+        ctx11.fillStyle = ptrn;
+        ctx11.fillRect(0, 0, 150, 150);
+    }
+
+    var ctx12 = document.getElementById('canvas-shadowedtext').getContext('2d');
+
+    ctx12.shadowOffsetX = 2;
+    ctx12.shadowOffsetY = 2;
+    ctx12.shadowBlur = 2;
+    ctx12.shadowColor = 'rgba(0, 0, 0, 0.5)';
+
+    ctx12.font = '20px Times New Roman';
+    ctx12.fillStyle = 'Black';
+    ctx12.fillText('Sample String', 5, 50);
+
+    var ctx13 = document.getElementById('canvas-fillrules').getContext('2d');
+    ctx13.beginPath();
+    ctx13.arc(50, 50, 30, 0, Math.PI * 2, true);
+    ctx13.arc(50, 50, 15, 0, Math.PI * 2, true);
+    ctx13.fill('evenodd');
 }
 
 function drawMiterLimit() {
