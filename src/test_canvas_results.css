@@ -1,0 +1,51 @@
+.container > .results {
+    overflow: hidden;
+    padding: 5px 5px 5px 50px;
+    width: 950px;
+}
+
+.container > .results > .individual-results {
+    /* border: 1px solid #55545fc2;*/
+    overflow: hidden;
+    padding: 5px;
+}
+.container > .results > .individual-results > span:first-child {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.container > .results > .individual-results > .text {
+    border: 1px solid rgba(196, 204, 192, 0.761);
+    float: left;
+    margin-right: 5px;
+}
+.container > .results > .individual-results > .translated {
+    border: 1px solid #cec7c8c2;
+    margin-right: 5px;
+    float: left;
+}
+.container > .results > .individual-results > .rotated {
+    border: 1px solid #d2d3cfc2;
+    overflow: hidden;
+}
+.container > .results > .everything-mixed {
+    text-align: center;
+    margin-top: 10px;
+}
+.container > .results > .everything-mixed > span:first-of-type {
+    font-size: 18px;
+    font-weight: bold;
+}
+.container > .results > .everything-mixed > .mixed {
+    border: 1px solid rgb(233, 236, 230);
+    margin-top: 5px;
+    display: inline-flex;
+}
+.container > .results > .everything-mixed > .working {
+    border: 1px solid rgb(233, 236, 230);
+    margin-top: 5px;
+    display: inline-flex;
+}

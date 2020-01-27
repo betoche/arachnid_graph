@@ -1,0 +1,81 @@
+.container {
+    margin-bottom: 20px;
+}
+
+.container > .left-pane > .information {
+    overflow: hidden;
+    margin-left: 5px;
+    width: 405px;
+}
+.container > .left-pane > .information > span:first-child {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+.container > .left-pane > .information > div {
+    border: 1px solid rgb(189, 192, 209);
+    padding: 5px;
+    text-align: center;
+}
+
+.container > .left-pane > .information > div > .info-1 {
+    text-align: center;
+    overflow: hidden;
+}
+.container > .left-pane > .information > div > .info-1 > span:first-child {
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    font-weight: bold;
+}
+.container > .left-pane > .information > div > .info-1 > span#info-text {
+    background-color: rgb(220, 221, 221);
+    display: inline-block;
+    min-width: 150px;
+    min-height: 1.7em;
+    margin-top:5px;
+}
+.container > .left-pane > .information > div > .info-2 > span#info-x {
+    display: inline-block;
+    width: 40px;
+}
+.container > .left-pane > .information > div > .info-2 > span#info-y {
+    display: inline-block;
+    width: 40px;
+}
+.container > .left-pane > .information > div > .info-2 > span,
+.container > .left-pane > .information > div > .info-3 > span {
+    display: inline-block;
+    margin-left: 5px;
+}
+.container > .left-pane > .information > div > .info-2 > span:nth-of-type(1),
+.container > .left-pane > .information > div > .info-2 > span:nth-of-type(4) {
+    width: 100px;
+}
+.container > .left-pane > .information > div > .info-2 > span:nth-of-type(2),
+.container > .left-pane > .information > div > .info-2 > span:nth-of-type(3),
+.container > .left-pane > .information > div > .info-2 > span:nth-of-type(5),
+.container > .left-pane > .information > div > .info-2 > span:nth-of-type(6) {
+    width: 50px;
+}
+.container > .left-pane > .information > div > .info-3 > span:nth-of-type(1),
+.container > .left-pane > .information > div > .info-3 > span:nth-of-type(4) {
+    width: 100px;
+}
+.container > .left-pane > .information > div > .info-3 > span:nth-of-type(2),
+.container > .left-pane > .information > div > .info-3 > span:nth-of-type(3),
+.container > .left-pane > .information > div > .info-3 > span:nth-of-type(5),
+.container > .left-pane > .information > div > .info-3 > span:nth-of-type(6) {
+    width: 50px;
+}
+.container > .left-pane > .information > div > .info-2 > span:nth-of-type(5),
+.container > .left-pane > .information > div > .info-2 > span:nth-of-type(6),
+.container > .left-pane > .information > div > .info-3 > span:nth-of-type(5),
+.container > .left-pane > .information > div > .info-3 > span:nth-of-type(6) {
+    background-color: rgb(246, 245, 243);
+    min-height: 1.7em;
+}

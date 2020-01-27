@@ -1,0 +1,99 @@
+<html>
+    <head>
+        <script src="test_canvas_initializer.js"></script>
+        <script src="test_canvas.js"></script>
+        <link rel="stylesheet" href="test_canvas.css">
+        <link rel="stylesheet" href="test_canvas_left_parameters.css">
+        <link rel="stylesheet" href="test_canvas_left_information.css">
+        <link rel="stylesheet" href="test_canvas_results.css">
+    <head>
+    <body onload="javascript: initialize();">
+        <h2>Testing with Canvas Functions</h2>
+        <div class="container">
+            <div class="left-pane">
+                <div class="parameters">
+                    <span>Parameters</span>
+                    <div class="col-1">
+                        <div>
+                            <span>Text :</span>
+                            <input type="text" name="text" id="text" onkeyup="javascript:introducedText(this.value);">
+                        </div>
+                        <div>
+                            <span>X :</span>
+                            <input type="number" name="x" id="x" onkeyup="javascript:introducedX(this.value);" onchange="javascript:introducedX(this.value);">
+                        </div>
+                        <div>
+                            <span>Y :</span>
+                            <input type="number" name="y" id="y" onkeyup="javascript:introducedY(this.value);" onchange="javascript:introducedY(this.value);">
+                        </div>
+                    </div>
+                    <div>
+                            <span>Save: </span>
+                            <input type="button" value="save" onclick="javascript:saveMixedCanvas();">
+                    </div>
+                    <div class="col-2">
+                        <div>
+                            <span>Rad : </span>
+                            <input type="number" name="radian" id="radian" min="" max="" step="0.1" onchange="javascript:introducedRadians(this.value);" alt="tooltip">
+                        </div>
+                        <div>
+                            <span>&#952; : </span>
+                            <input type="number" name="angle" id="angle" min="-360" max="360" step="1" onchange="javascript:introducedAngle(this.value);">
+                        </div>
+                        <div>
+                            <span>Font : </span>
+                            <input type="number" name="radius" id="radius" min="8" max="36" step="1" onchange="javascript:introducedFontSize(this.value);">
+                        </div>
+                        <div>
+                            <span>Radius : </span>
+                            <input type="number" name="font" id="font" min="-150" max="150" step="1" onchange="javascript:introducedRadius(this.value);">
+                        </div>
+                    </div>
+                </div>
+                <div class="information">
+                    <span>Information</span>
+                    <div>
+                        <div class="info-1">
+                            <span>Text</span>
+                            <span id="info-text"></span>
+                        </div>
+                        <div class="info-2">
+                            <span></span><span>X</span><span>Y</span><br>
+                            <span>Coordenates</span><span id="info-x"></span><span id="info-y"></span>
+                        </div>
+                        <div class="info-3">
+                            <span></span><span>Rad</span><span>&#952;</span><br>
+                            <span>Angle</span><span id="info-rad"></span><span id="info-angle"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="results">
+                <div class="individual-results">
+                    <span>Results</span>
+                    <div class="text">
+                        <canvas id="canvas-text" width="300px" height="300px"></canvas>
+                    </div>
+                    <div class="translated">
+                        <canvas id="canvas-translated" width="300px" height="300px"></canvas>
+                    </div>
+                    <div class="rotated">
+                        <canvas id="canvas-rotated" width="300px" height="300px"></canvas>
+                    </div>
+                </div>
+                <div class="everything-mixed">
+                    <span>Now everything mixed</span><br>
+                    <div class="mixed">
+                        <canvas id="canvas-mixed" width="300" height="300"></canvas>
+                    </div>
+                    <div class="working">
+                        <canvas id="canvas-working" width="300" height="300"></canvas>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div id="screenshots">
+        </div>
+    </body>
+</html>

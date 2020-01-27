@@ -1,0 +1,25 @@
+* {
+    font-family: Calibri;
+    font-style: normal;
+    font-size: 12px;
+}
+h2 {
+    font-size: 24px;
+    text-align: center;
+}
+div {
+    border-radius: 7px;
+}
+.container {
+    margin: 0 auto;
+    border: 1px solid #f8ecff;
+    width: 80%;
+    padding: 20px;
+    overflow: hidden;
+}
+.container > .left-pane {
+    width: 425px;
+    overflow: hidden;
+    float: left;
+}
+
